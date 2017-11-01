@@ -7,6 +7,9 @@
 #	pattern		point pattern (of class 'ppp')
 #
 #	r		      distance values at which to compute K	
+# and denominator separately
+#
+#	$Revision: 1 $	$Date: 2017/11/01 20:52:01 $
 #
 # -------- standard output ------------------------------
 #      A data frame with columns named
@@ -25,5 +28,4 @@ Kfoo <- function (pattern, r, correction = "isotropic",...){
   num <- num[, names(num)!= "theo"]
   den <- attr(K, which = "denominator")
   den <- den[, names(den) != "theo"]
-  return(K = data.frame(num = num$iso, den = den$iso, val = K$iso))
-}
+  return(K = data.frame(num = num$iso, den = den$iso, val = K$iso))}
