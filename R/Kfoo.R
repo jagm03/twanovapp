@@ -16,7 +16,6 @@
 #	den:		denominator of estimated K function
 #
 #	val:		K function estimated by the given correction
-
 # ------------------------------------------------------------------------
 
 Kfoo <- function (pattern, r, correction = "isotropic",...){
