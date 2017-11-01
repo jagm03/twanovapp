@@ -9,8 +9,6 @@
 #	r		      distance values at which to compute K	
 # and denominator separately
 #
-#	$Revision: 1 $	$Date: 2017/11/01 20:52:01 $
-#
 # -------- standard output ------------------------------
 #      A data frame with columns named
 #
