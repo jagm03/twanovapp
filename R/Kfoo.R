@@ -21,7 +21,7 @@
 #	val:		K function estimated by the given correction
 # ------------------------------------------------------------------------
 
-Kfoo <- function (pattern, r, correction = "isotropic",...){
+Kfoo <- function (pattern, r = NULL, correction = "isotropic",...){
   verifyclass(pattern, "ppp")
   K <- Kest(pattern, r = r, correction = correction, ratio = T, ...)
   num <- attr(K, which = "numerator")
