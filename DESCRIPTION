@@ -1,0 +1,10 @@
+Package: twanovappp
+Title: Spatial Replicated Point Pattern Analysis
+Version: 0.0.0.9000
+Authors@R: Jonatan A. Gonzalez <jmonsalv@uji.es>
+Maintainer: Jonatan A. Gonzalez <jmonsalv@uji.es>
+Description: .
+Depends: R (>= 3.3.2), spatstat.data (>= 1.1-0), spatstat.utils, spatstat
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
