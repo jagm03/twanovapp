@@ -21,11 +21,15 @@
 #	val:		K function estimated by the given correction
 # ------------------------------------------------------------------------
 
-Kfoo <- function (pattern, r = NULL, correction = "isotropic",...){
+Kfoo <- function (pattern, r = NULL, correction = "isotropic",...)
+  {
   verifyclass(pattern, "ppp")
   K <- Kest(pattern, r = r, correction = correction, ratio = T, ...)
   num <- attr(K, which = "numerator")
   num <- num[, names(num)!= "theo"]
   den <- attr(K, which = "denominator")
   den <- den[, names(den) != "theo"]
-  return(K = data.frame(num = num$iso, den = den$iso, val = K$iso))}
+  inden <- attr(K, "valu")
+  val <- K[[inden]]
+  return(K = data.frame(num = num[[inden]], den = den[[inden]], val = val))
+  }
